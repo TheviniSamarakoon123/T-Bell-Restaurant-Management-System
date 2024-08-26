@@ -3,7 +3,8 @@ import { FiSearch } from 'react-icons/fi';
 import BuffetReservation from "./BuffetReservation";
 import { useNavigate } from "react-router-dom";
 import {useQuery} from "react-query"
-import {getAllBuffetReservations} from "../fetchBuffetReservation/FetchBuffetReservation";
+import {getAllBuffetReservations} from "../fetchBuffetReservation/FetchBuffetReservation"
+import NavPage from "./NavPage";
 
 const BuffetReservations = () => {
 
@@ -50,6 +51,8 @@ const BuffetReservations = () => {
     const navigate = useNavigate();
 
     return (
+        <div>
+            < NavPage />
         <div className="w-[100%] mx-auto my-[3rem] border-2 border-blue-100 shadow-md shadow-gray-400 rounded-lg relative">
             <h1 className="p-6 text-center flex-1 text-2xl font-bold text-gray-700">Buffet Reservations</h1>
 
@@ -109,6 +112,7 @@ const BuffetReservations = () => {
                 )}
             </div>
 
+        </div>
         </div>
     );
 };

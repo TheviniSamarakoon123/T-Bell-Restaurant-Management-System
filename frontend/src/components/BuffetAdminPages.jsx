@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useQuery } from "react-query"
 import BuffetAdminPage from './BuffetAdminPage';
 import { getAllBuffets } from '../fetchBuffet/fetchBuffet';
+import NavPage from './NavPage';
 
 
 const BuffetAdminPages = () => {
@@ -13,6 +14,8 @@ const BuffetAdminPages = () => {
   const navigate = useNavigate();
 
   return (
+    <div>
+      < NavPage />
     <div
       className="w-[100%] mx-auto my-[3rem] border-2 border-blue-100 shadow-md shadow-gray-400
       rounded-lg relative">
@@ -37,6 +40,8 @@ const BuffetAdminPages = () => {
             ))}
 
       </div>
+
+    </div>
     </div>
   )
 }

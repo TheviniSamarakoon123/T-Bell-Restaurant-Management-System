@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from "react-query";
 import { addBuffet, updateBuffet } from '../../fetchBuffet/fetchBuffet';
-import { BuffetContextShare } from "../../context/Context";
+import { BuffetContextShare } from "../../context/Context"
+import NavPage from "../NavPage";
 
 const Addbuffet = () => {
   const navigate = useNavigate();
@@ -63,6 +64,8 @@ const Addbuffet = () => {
   }
 
   return (
+    <div>
+      < NavPage />
     <section>
       <button onClick={() => navigate(-1)} className="absolute top-[2rem] left-[4rem] button px-5 ext-sm">
                 Go Back
@@ -94,7 +97,9 @@ const Addbuffet = () => {
         </form>
 
       </div>
+     
     </section>
+    </div>
   )
 }
 

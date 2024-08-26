@@ -14,7 +14,7 @@ const NavPage = () => {
             <div className="flex space-x-4">
                 <a href="/buffet-admin" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">BuffetAdmin</a>
                 <a href="/add-buffet" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">AddBuffet</a>
-                <a href="/reservation" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reservation</a>
+                <a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">BuffetReservations</a>
             </div>
             </div>
         </div>
