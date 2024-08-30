@@ -12,7 +12,7 @@ const MakeReservation = () => {
     const buffetTypes = ['Breakfast', 'Lunch', 'Hightea', 'Dinner']; // Buffet types
 
     const [buffetReservation, setBuffetReservation] = useState({
-        firstname: "",
+        fristname: "",
         lastname: "",
         mobile: "",
         email: "",
@@ -26,7 +26,7 @@ const MakeReservation = () => {
         if (update) {
             setBuffetReservation({
                 ...buffetReservation,
-                firstname: update.firstname,
+                fristname: update.fristname,
                 lastname: update.lastname,
                 mobile: update.mobile,
                 email: update.email,
@@ -104,7 +104,7 @@ const MakeReservation = () => {
 
                         <h1 className="text-center text-xl font-medium">{update ? "Update Reservation" : "Reservation Form"}</h1>
 
-                        <input value={buffetReservation.firstname} onChange={(e) => setBuffetReservation({ ...buffetReservation, firstname: e.target.value })} className="input" type="text" placeholder="First Name" pattern="[A-Za-z\s]{1,15}" title="First name should contain letters and spaces up to 15 characters" required />
+                        <input value={buffetReservation.fristname} onChange={(e) => setBuffetReservation({ ...buffetReservation, fristname: e.target.value })} className="input" type="text" placeholder="First Name" pattern="[A-Za-z\s]{1,15}" title="First name should contain letters and spaces up to 15 characters" required />
                         <input value={buffetReservation.lastname} onChange={(e) => setBuffetReservation({ ...buffetReservation, lastname: e.target.value })} className="input" type="text" placeholder="Last Name" pattern="[A-Za-z\s]{1,15}" title="Last name should contain letters and spaces up to 15 characters" required />
                         <input value={buffetReservation.mobile} onChange={(e) => setBuffetReservation({ ...buffetReservation, mobile: e.target.value })} className="input" type="tel" placeholder="Mobile" pattern="0[0-9]{9}" title="Phone number should start with 0 and contain 10 digits" required />
                         <input value={buffetReservation.email} onChange={(e) => setBuffetReservation({ ...buffetReservation, email: e.target.value })} className="input" type="email" placeholder="Email" pattern=".+@gmail\.com" title="Email should be a Gmail address (example@gmail.com)" required />
